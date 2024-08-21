@@ -189,6 +189,7 @@ public class Main {
             for (j = 0; j < 2; j++) {
                 System.out.printf("%d° nota: %.2f %n", j, nota[i][j]);
             }
+            System.out.printf("Média: %.2f %n", media[i]);
             System.out.printf("Situação: %s %n", resultadoNomeAluno[i]);
         }
 
