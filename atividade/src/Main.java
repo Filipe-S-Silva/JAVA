@@ -199,7 +199,8 @@ public class Main {
         n = sc.nextInt();
 
         //retorno
-        for (int i = 0; i < 10; i++) {
+        System.out.printf("Tabuada do %d %n", n);
+        for (int i = 0; i <= 10; i++) {
             System.out.printf("%d x %d = %d %n", n, i, n*i);
         }
 
