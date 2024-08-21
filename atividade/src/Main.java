@@ -63,8 +63,9 @@ public class Main {
                 default:
                     System.out.println("Código invalido, tente novamente");
                     break;
-
             }
+
+            System.out.println("Código salvo");
 
         } while (codigo != 4);
 
