@@ -24,14 +24,14 @@ public class Main {
             System.out.print("Digite a senha");
             senhaTeste = sc.next();
 
-            if (senhaTeste != "2002"){
+            if (senhaTeste.intern() != "2002"){
                 System.out.println("Senha invalida");
             }else {
                 System.out.println("Acesso Permitido");
             }
 
 
-        }while (senhaTeste != "2002");
+        }while (senhaTeste.intern() != "2002");
 
         //SEGUNDA QUESTAO
         //variaveis
