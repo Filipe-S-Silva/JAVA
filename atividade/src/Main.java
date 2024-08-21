@@ -107,10 +107,10 @@ public class Main {
         do {
             System.out.print("Digite um numero: ");
             n = sc.nextInt();
-            if (n >= 1  || n <= 5){
+            if (n >= 1 && n <= 5){
                 System.out.println("Numero inserido entre 1 e 5");
             }
-        }while (n >= 1  || n <= 5);
+        }while (n >= 1 && n <= 5);
 
         //QUINTA QUESTAO
         //variaveis
