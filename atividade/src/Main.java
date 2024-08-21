@@ -144,7 +144,7 @@ public class Main {
         valor = sc.nextInt();
 
         //usuario e validação
-        for (int i = 0; i <= valor; i++){
+        for (int i = 0; i < valor; i++){
             System.out.print("Digite o valor: ");
             n = sc.nextInt();
             n = (n >= 10 && n <= 20) ? in++ : out++;
