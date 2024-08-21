@@ -93,7 +93,7 @@ public class Main {
                numero = numero % 2 == 0 ? par++ : impar++;
             }
 
-        }while (numero < 0);
+        }while (numero >= 0);
 
         //retorno
         System.out.printf("Quantidade par: %d%n", par);
