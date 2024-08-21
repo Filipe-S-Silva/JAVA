@@ -65,7 +65,9 @@ public class Main {
                     break;
             }
 
-            System.out.println("Código salvo");
+            if (codigo <= 1 && codigo >=3){
+                System.out.println("Código salvo");
+            }
 
         } while (codigo != 4);
 
