@@ -7,7 +7,7 @@ public class Main {
 
         Aluno aluno = new Aluno();
         Scanner sc = new Scanner(System.in);
-        double soma = 0;
+
 
         System.out.print("Informe o nome do aluno: ");
         aluno.nome = sc.nextLine();
@@ -17,7 +17,7 @@ public class Main {
                 System.out.printf("Informe a %d° nota: ", i + 1);
                 aluno.notas[i] = sc.nextDouble();
 
-                while (aluno.notas[i] > 30){
+                while (aluno.notas[i] > 30 || aluno.notas[i] < 0){
                 System.out.println("Nota invalida");
                 System.out.printf("Informe a %d° nota: ", i + 1);
                 aluno.notas[i] = sc.nextDouble();
@@ -26,20 +26,29 @@ public class Main {
             } else {
                 System.out.printf("Informe a %d° nota: ", i + 1);
                 aluno.notas[i] = sc.nextDouble();
-                while (aluno.notas[i] > 35){
+                while (aluno.notas[i] > 35 || aluno.notas[i] < 0){
                     System.out.println("Nota invalida");
                     System.out.printf("Informe a %d° nota: ", i + 1);
                     aluno.notas[i] = sc.nextDouble();
                 }
             }
 
-            soma += aluno.notas[i];
+            aluno.soma += aluno.notas[i];
         }
 
-        aluno.media = aluno.calcularMedia(soma);
+        aluno.conseguirResultado(aluno.soma);
 
+        System.out.printf("Nome aluno: %s %n", aluno.nome);
+        for (byte i = 0; i < 3; i++) {
+            System.out.printf("%d° nota: %.2f %n", i + 1, aluno.notas[i]);
+        }
 
-
+        if (aluno.soma >= 60){
+            System.out.printf("Situação: %s %n", aluno.resultado);
+        } else {
+            System.out.printf("Situação: %s %n", aluno.resultado);
+            System.out.printf("Pontos faltante: %.2f %n", aluno.faltaPonto);
+        }
 
     }
 
