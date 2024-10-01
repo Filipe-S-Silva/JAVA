@@ -64,6 +64,7 @@ public class Main {
                 default:
 
                     System.out.println("Tipo não encontrado tente novamente..........");
+                    i--;
 
                     break;
 
